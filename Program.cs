@@ -75,6 +75,7 @@ static void MenuCalculator() {
   Console.WriteLine($"{(int)ECalculatorOptions.Subtraction} - {ECalculatorOptions.Subtraction}");
   Console.WriteLine($"{(int)ECalculatorOptions.Multiplication} - {ECalculatorOptions.Multiplication}");
   Console.WriteLine($"{(int)ECalculatorOptions.Division} - {ECalculatorOptions.Division}");
+  Console.WriteLine("5 - Exit");
 
   Console.WriteLine("-----------------");
 
@@ -85,8 +86,8 @@ static void MenuCalculator() {
     case (int)ECalculatorOptions.Subtraction: Subtraction(); break;
     case (int)ECalculatorOptions.Multiplication: Multiplication(); break;
     case (int)ECalculatorOptions.Division: Division(); break;
+    case 5: System.Environment.Exit(0); break;
     default: MenuCalculator(); break;
-    // default: Console.WriteLine("Invalid option"); break;
   }
 }
 
